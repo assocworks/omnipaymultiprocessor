@@ -8,7 +8,7 @@
  */
 class CRM_Omnipaymultiprocessor_ExtensionUtil {
   const SHORT_NAME = "omnipaymultiprocessor";
-  const LONG_NAME = "nz.co.fuzion.omnipaymultiprocessor";
+  const LONG_NAME = "omnipaymultiprocessor.payfast";
   const CLASS_PREFIX = "CRM_Omnipaymultiprocessor";
 
   /**

@@ -1,4 +1,4 @@
-Package: nz.co.fuzion.omnipaymultiprocessor
+Package: omnipaymultiprocessor.payfast
 Copyright (C) 2016, FIXME <FIXME>
 Licensed under the GNU Affero Public License 3.0 (below).
 
