@@ -21,6 +21,6 @@
   </compatibility>
   <comments>This package integrates the omnipay library with CiviCRM. This release is for Omnipay 3.x and requires php 7.1.</comments>
   <civix>
-    <namespace>CRM/Omnipaymultiprocessor_payfast</namespace>
+    <namespace>CRM/Omnipaymultiprocessor</namespace>
   </civix>
 </extension>
