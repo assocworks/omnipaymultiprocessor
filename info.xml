@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<extension key="omnipaymultiprocessor" type="module">
+  <file>omnipaymultiprocessor</file>
+  <name>Omnipay multiprocessor support with PayFast</name>
+  <description>The Omnipaymultiprocessor extension including PayFast driver</description>
+  <license>AGPL</license>
+  <maintainer>
+    <author>aiden</author>
+    <email>emailaiden@gmail.com</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/assocworks/omnipaymultiprocessor</url>
+    <url desc="Support">http://forum.civicrm.org</url>
+    <url desc="Licensing">http://civicrm.org/licensing</url>
+  </urls>
+  <releaseDate>2020-02-04</releaseDate>
+  <version>1.0</version>
+  <develStage>dev</develStage>
+  <compatibility>
+    <ver>5.17</ver>
+  </compatibility>
+  <comments></comments>
+  <civix>
+    <namespace>CRM/Omnipaymultiprocessor</namespace>
+  </civix>
+</extension>
