@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<extension key="omnipaymultiprocessor_payfast" type="module">
+<extension key="omnipaymultiprocessor.payfast" type="module">
   <file>omnipaymultiprocessor</file>
   <name>Omnipay multiprocessor support with PayFast</name>
   <description>The Omnipaymultiprocessor extension including PayFast driver</description>
