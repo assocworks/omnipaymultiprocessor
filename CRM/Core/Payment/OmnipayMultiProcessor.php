@@ -638,12 +638,6 @@ class CRM_Core_Payment_OmnipayMultiProcessor extends CRM_Core_Payment_PaymentExt
       'contact_api' => 'display_name',
     ];
 
-    // aiden - just doing this here for now
-    $fields['is_recur'] = [
-      'name' => 'is_recur',
-      'is_pass_through' => true,
-    ];
-
     $additionalMetadata = $this->getProcessorTypeMetadata('payment_fields_metadata');
     if ($additionalMetadata) {
       $fields = array_merge($fields, $additionalMetadata);
@@ -1079,6 +1073,8 @@ class CRM_Core_Payment_OmnipayMultiProcessor extends CRM_Core_Payment_PaymentExt
   }
 
   public function cancelSubscription() {
+    // aiden - cancellation issues unless this returns true
+     return TRUE;
     // We take no action here - the key thing is that the contribution_recur record is updated.
   }
 
