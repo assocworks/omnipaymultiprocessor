@@ -82,6 +82,7 @@ class Gateway extends AbstractGateway
     // aiden - required for omnipay's recurring billing
     public function createCard(array $parameters = array())
     {
+        $parameters['is_recur'] = 1;
         return $this->purchase($parameters);
     }
 }
