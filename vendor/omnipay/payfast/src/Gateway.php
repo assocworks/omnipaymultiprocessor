@@ -85,4 +85,5 @@ class Gateway extends AbstractGateway
         $parameters['is_recur'] = 1;
         return $this->purchase($parameters);
     }
+
 }

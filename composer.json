@@ -33,6 +33,7 @@
         "omnipay/worldpay": "^3.0@dev",
         "omnipay/paymentexpress": "^3.0@dev",
         "omnipay/common": "^3.0@dev",
+        "symfony/http-foundation": "^3.4.26||^4.2.7||^5",
         "dioscouri/omnipay-cybersource": "^3.0@dev",
         "fuzion/omnipay-mercanet": "^3.0@dev",
         "razorpay/omnipay-razorpay": "^3.0@dev",
@@ -48,7 +49,7 @@
     "minimum-stability": "dev",
     "config": {
         "platform": {
-            "php": "7.0.0"
+            "php": "7.1.3"
         }
     }
 }
