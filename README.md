@@ -14,7 +14,7 @@ This package adds a PayFast driver to Eileen's extension. The code is edited fro
 Changes are commented and labelled with 'aiden'.
 
 New file:
-- Added an .mgd file for PayFast to the Eileen's extension's Metadata folder. /Metadata/omnipay_PayFast.mgd.php
+- Added an .mgd file for PayFast to Eileen's extension's Metadata folder. /Metadata/omnipay_PayFast.mgd.php
 
 Edited files:
 - /CRM/Core/Payment/OmnipayMultiProcessor.php
