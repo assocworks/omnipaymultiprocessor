@@ -277,7 +277,8 @@ class PurchaseRequest extends AbstractRequest
           ];
           $data['body'] = [
             'amount' => (int)($this->getAmount() * 100),
-            'item_name' => $this->getDescription(),
+            // aiden - signature error when there's a trailing slash
+            'item_name' => trim($this->getDescription()),
             'passphrase' => $this->getParameter('passphrase')
           ];
           $data['header']['signature'] = $this->generateAPISignature($data);
@@ -305,7 +306,8 @@ class PurchaseRequest extends AbstractRequest
 
         $data['m_payment_id'] = $this->getTransactionId();
         $data['amount'] = $this->getAmount();
-        $data['item_name'] = $this->getDescription();
+        // aiden - signature error when there's a trailing slash
+        $data['item_name'] = trim($this->getDescription());
         $data['custom_int1'] = $this->getCustomInt1();
         $data['custom_int2'] = $this->getCustomInt2();
         $data['custom_int3'] = $this->getCustomInt3();
