@@ -9,8 +9,8 @@ use Omnipay\Common\Message\AbstractRequest;
  */
 class PurchaseRequest extends AbstractRequest
 {
-    protected $liveEndpoint = 'https://www.payfast.co.za/eng/process';
-    protected $testEndpoint = 'https://sandbox.payfast.co.za/eng/process';
+    protected $liveEndpoint = 'https://www.payfast.co.za/eng/';
+    protected $testEndpoint = 'https://sandbox.payfast.co.za/eng/';
     protected $APIEndpoint  = 'https://api.payfast.co.za/subscriptions/';
 
     public function getMerchantId()
@@ -412,7 +412,7 @@ class PurchaseRequest extends AbstractRequest
 
     public function sendData($data)
     {
-        return $this->response = new PurchaseResponse($this, $data, $this->getEndpoint());
+        return $this->response = new PurchaseResponse($this, $data, $this->getEndpoint().'process');
     }
 
     public function getEndpoint()

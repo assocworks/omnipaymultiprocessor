@@ -81,7 +81,7 @@ class CompletePurchaseRequest extends PurchaseRequest
                     $status = "INVALID";
                 } else {
 
-                  $url = $this->getEndpoint().'/query/validate';
+                  $url = $this->getEndpoint().'query/validate';
 
                   // aiden using code from payfast
 
