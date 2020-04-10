@@ -412,7 +412,12 @@ class PurchaseRequest extends AbstractRequest
 
     public function sendData($data)
     {
-        return $this->response = new PurchaseResponse($this, $data, $this->getEndpoint().'process');
+        if ($this->getCardTransactionType() == 'continuous') {
+          $endpoint = $this->getEndpoint();
+        } else {
+          $endpoint = $this->getEndpoint().'process';
+        }
+        return $this->response = new PurchaseResponse($this, $data, $endpoint);
     }
 
     public function getEndpoint()
