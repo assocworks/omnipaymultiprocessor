@@ -228,7 +228,7 @@ abstract class CRM_Core_Payment_PaymentExtended extends CRM_Core_Payment {
    *
    * @return string
    */
-  protected function getPaymentDescription($params, $length = 24) {
+  protected function getPaymentDescription($params = [], $length = 24) {
     $parts = array('contactID', 'contributionID', 'description', 'billing_first_name', 'billing_last_name');
     $validParts = array();
     if (isset($params['description'])) {
